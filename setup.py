@@ -20,7 +20,7 @@ except Exception:
 """.lstrip()
 
 setup(
-    use_scm_version={'write_to': os.path.join('{{ cookiecutter.module_name }}', 'version.py'),
+    use_scm_version={'write_to': os.path.join('plasmapy_addon_hello', 'version.py'),
                      'write_to_template': VERSION_TEMPLATE},
 {% if cookiecutter.use_compiled_extensions == 'y' %}
     ext_modules=get_extensions()
