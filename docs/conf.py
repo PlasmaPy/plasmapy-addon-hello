@@ -6,16 +6,23 @@
 # full list see the documentation:
 # http://www.sphinx-doc.org/en/master/config
 
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath('..'))
 
 # -- Project information -----------------------------------------------------
 
 project = 'plasmapy_addon_hello'
-copyright = '2020, {{ cookiecutter.author_name }}'
-author = '{{ cookiecutter.author_name }}'
+copyright = '2020, PlasmaPy Community'
+author = 'PlasmaPy Community'
 
 # The full version, including alpha/beta/rc tags
-from {{ cookiecutter.module_name }} import __version__
-release = __version__
+from plasmapy_addon_hello import __version__ as release
+from plasmapy import __version__ as release
+release = '' if release == 'unknown' else release
+# The short X.Y version.
+version = '.'.join(release.split('.')[:2])
 
 # -- General configuration ---------------------------------------------------
 
@@ -54,13 +61,16 @@ master_doc = 'index'
 # -- Options for intersphinx extension ---------------------------------------
 
 # Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'https://docs.python.org/': None}
+intersphinx_mapping = {
+    'pthon': ('https://docs.python.org/', None),
+    'plasmapy': ('http://docs.plasmapy.org/en/latest/', None),
+}
 
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = '{{ cookiecutter._sphinx_theme }}'
+html_theme = 'sphinx_rtd_theme'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
