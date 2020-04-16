@@ -1,4 +1,0 @@
-# these are dependencies requirec to setup/instal the package
-# ought to mirror 'setup_requires' under 'options' in config.cfg
-setuptools >= 41.2
-setuptools_scm

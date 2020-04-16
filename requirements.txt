@@ -1,5 +1,5 @@
 # all dependencies
--r requirements/setup_requirements.txt
+-r requirements/build_requirements.txt
 -r requirements/install_requirements.txt
 -r requirements/tests_requirements.txt
 -r requirements/docs_requirements.txt
