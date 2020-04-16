@@ -1,4 +1,6 @@
 # these are dependencies required to build package documentaiton
 # ought to mirror 'docs' under options.extras_requrie in config.cfg
+numpydoc
 sphinx
 sphinx-automodapi
+sphinx_rtd_theme
