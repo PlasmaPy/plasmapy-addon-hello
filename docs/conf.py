@@ -19,7 +19,6 @@ author = 'PlasmaPy Community'
 
 # The full version, including alpha/beta/rc tags
 from plasmapy_addon_hello import __version__ as release
-from plasmapy import __version__ as release
 release = '' if release == 'unknown' else release
 # The short X.Y version.
 version = '.'.join(release.split('.')[:2])
