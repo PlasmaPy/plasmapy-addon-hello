@@ -21,4 +21,3 @@ help:
 
 clean:
 	rm -rf $(BUILDDIR)/*
-	rm -rf auto_examples api cache gen_modules __pycache
