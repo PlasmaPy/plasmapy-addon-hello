@@ -1,0 +1,4 @@
+# these are dependencies required to build package documentaiton
+# ought to mirror 'docs' under options.extras_requrie in config.cfg
+sphinx
+sphinx-automodapi
