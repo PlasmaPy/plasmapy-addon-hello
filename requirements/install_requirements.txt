@@ -1,3 +1,4 @@
 # these are dependencies required to use the package
 # ought to mirror 'instal_requires' under 'options' in config.cfg
 plasmapy >= 0.3.1
+setuptools >= 41.2
