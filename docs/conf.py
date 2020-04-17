@@ -13,7 +13,7 @@ sys.path.insert(0, os.path.abspath('..'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'plasmapy_addon_hello'
+project = 'plasmapy-addon-hello'
 copyright = '2020, PlasmaPy Community'
 author = 'PlasmaPy Community'
 
@@ -56,7 +56,7 @@ master_doc = 'index'
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {
-    'pthon': ('https://docs.python.org/', None),
+    'python': ('https://docs.python.org/3', None),
     'plasmapy': ('http://docs.plasmapy.org/en/latest/', None),
 }
 
