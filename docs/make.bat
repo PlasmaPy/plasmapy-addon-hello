@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=.
 set BUILDDIR=_build
-set SPHINXPORJ=PlasmaPy
+set SPHINXPROJ=plasmapy-addon-hello
 
 if "%1" == "" goto help
 
