@@ -70,3 +70,8 @@ html_theme = 'sphinx_rtd_theme'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 # html_static_path = ['_static']
+
+# A list of prefixes that are ignored for sorting the Python module
+# index (e.g., if this is set to ['foo.'], then foo.bar is shown under
+# B, not F).
+modindex_common_prefix = ['plasmapy_addon_hello.']

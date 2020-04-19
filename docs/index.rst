@@ -1,17 +1,45 @@
-{{ cookiecutter.package_name }} Documentation
-{{ '-' * (cookiecutter.package_name + " Documentation")|length }}
-
-This is the documentation for {{ cookiecutter.package_name }}.
+=============================================
+Documentation for :mod:`plasmapy-addon-hello`
+=============================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :hidden:
+
+   src/about.rst
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Package Structure
+   :hidden:
+
+   ./src/plasmapy_addon_hello
+   genindex
+   py-modindex
 
 
 
-Indices and tables
-==================
+.. contents:: Table of Contents
+   :local:
+   :backlinks: entry
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+----
+
+.. .. include:: src/about.rst
+
+
+Installing
+==========
+
+
+Configuration of :code:`entry_points`
+=====================================
+
+
+.. Indices and tables
+   ==================
+   * :ref:`genindex`
+   * :ref:`modindex`
+   * :ref:`search`
+
+
