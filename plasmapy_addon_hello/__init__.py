@@ -8,7 +8,6 @@ heading in this distributions `setup.cfg file <>`_.
 """
 __all__ = ['HELLO_STATEMENT', 'hello']
 
-
 from pkg_resources import (DistributionNotFound, get_distribution)
 from textwrap import fill as _tw_fill
 
