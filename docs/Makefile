@@ -21,3 +21,4 @@ help:
 
 clean:
 	rm -rf $(BUILDDIR)/*
+	rm -rf api gen_modules __pycache
